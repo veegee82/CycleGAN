@@ -48,7 +48,7 @@ $ pip3 install -e .
 
 1. Clone the repository
 ```
-$ git@github.com:Shumway82/CycleGAN.git
+$ git clone git@github.com:Shumway82/CycleGAN.git
 ```
 2. Go to folder
 ```
