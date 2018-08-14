@@ -13,6 +13,9 @@ Image-to-image translation is a class of vision and graphics problems where the 
 * Option to use an U-Net with skip connections.
 * An an perceptual loss witch is extracted and calculated from the discriminator network of the corresponding domain A or B. 
 
+## Results
+* Comming soon
+
 ## Pre-requiremtents
 * tensorflow >= 1.8 
 * pil 
@@ -52,11 +55,11 @@ $ pip3 install -e .
 ## Usage-Example
 
 1. Training
-'''
-python pipeline_trainer.py --dataset "../horse2zebra/" --config_path "../config/" 
-'''
+```
+$ python pipeline_trainer.py --dataset "../horse2zebra/" --config_path "../config/" 
+```
 
 2. Inferencing
-'''
-python pipeline_inferencer.py --dataset "../horse2zebra/testA" --outdir ../Results/Horse2Zebra_AtoB" --model_dir ../pretrained_models/generator/Horse2Zebra/"
-'''
+```
+$ python pipeline_inferencer.py --dataset "../horse2zebra/testA" --outdir ../Results/Horse2Zebra_AtoB" --model_dir ../pretrained_models/generator/Horse2Zebra/"
+```
