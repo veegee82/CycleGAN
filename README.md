@@ -4,9 +4,16 @@
 
 Paper: https://arxiv.org/pdf/1703.10593.pdf
 
-Abstract:
-
+### Abstract
 Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. However, for many tasks, paired training data will not be available. We present an approach for learning to translate an image from a source domain X to a target domain Y in the absence of paired examples. Our goal is to learn a mapping G:X→Y such that the distribution of images from G(X) is indistinguishable from the distribution Y using an adversarial loss. Because this mapping is highly under-constrained, we couple it with an inverse mapping F:Y→X and introduce a cycle consistency loss to push F(G(X))≈X (and vice versa). Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc. Quantitative comparisons against several prior methods demonstrate the superiority of our approach.
+
+## Workflow
+### Convert Domain A to B (Horse to Zebra)
+![Domain A to B](https://github.com/Shumway82/CycleGAN/blob/master/CycleGAN/images/model.jpg)
+#
+### Convert Domain B to A (Zebra to Horse)
+![Domain B to A](https://github.com/Shumway82/CycleGAN/blob/master/CycleGAN/images/model1.jpg)
+
 
 ## Modifications
 * Modify the ResNet-Generator with recursive residual blocks like in the DRRN. http://cvlab.cse.msu.edu/pdfs/Tai_Yang_Liu_CVPR2017.pdf
@@ -14,7 +21,7 @@ Image-to-image translation is a class of vision and graphics problems where the 
 * An an perceptual loss witch is extracted and calculated from the discriminator network of the corresponding domain A or B. 
 
 ## Results
-* Comming soon
+* Coming soon
 
 ## Pre-requiremtents
 * tensorflow >= 1.8 
