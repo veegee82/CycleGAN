@@ -31,16 +31,14 @@ Image-to-image translation is a class of vision and graphics problems where the 
 ## Installation tf_base package
 1. Clone the repository
 ```
-$ git clone git@github.com:Shumway82/tf_core.git
+$ git clone https://github.com/Shumway82/tf_base.git
 ```
 2. Go to folder
 ```
-$ cd tf_core
+$ cd tf_base
 ```
 3. Install with pip3
-```
-$ pip3 install tfcore
-or for editing the repository 
+``` 
 $ pip3 install -e .
 ```
 
@@ -48,7 +46,7 @@ $ pip3 install -e .
 
 1. Clone the repository
 ```
-$ git clone git@github.com:Shumway82/CycleGAN.git
+$ git clone https://github.com/Shumway82/CycleGAN.git
 ```
 2. Go to folder
 ```
